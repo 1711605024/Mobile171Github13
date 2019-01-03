@@ -22,56 +22,57 @@
         android:id="@+id/tv_sp_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="28dp"
         android:text="商品名称："
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/edt_sp_name"
+        app:layout_constraintEnd_toStartOf="@+id/edt_cx_name"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_sp_show" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_sp" />
 
     <EditText
-        android:id="@+id/edt_sp_name"
+        android:id="@+id/edt_cx_name"
         android:layout_width="148dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_sp_name"
-        app:layout_constraintEnd_toStartOf="@+id/btn_sp_check"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cx_check"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tv_sp_name" />
 
     <Button
-        android:id="@+id/btn_sp_check"
+        android:id="@+id/btn_cx_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="查找"
         android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/edt_sp_name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edt_cx_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/edt_sp_name" />
+        app:layout_constraintStart_toEndOf="@+id/edt_cx_name" />
 
     <Button
-        android:id="@+id/btn_sp_add"
+        android:id="@+id/btn_cx_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="30dp"
         android:text="添加商品信息"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_sp_name" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_cx_name" />
 
     <TextView
-        android:id="@+id/tv_sp_show"
+        android:id="@+id/tv_cx_show"
         android:layout_width="0dp"
         android:layout_height="277dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="53dp"
         android:background="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_sp" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_cx_add" />
 
 </android.support.constraint.ConstraintLayout>

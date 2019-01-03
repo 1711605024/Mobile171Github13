@@ -25,13 +25,13 @@
         android:layout_marginTop="28dp"
         android:text="编号："
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/edt_spxq_NO"
+        app:layout_constraintEnd_toStartOf="@+id/edt_xq_NO"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_spxq" />
 
     <EditText
-        android:id="@+id/edt_spxq_NO"
+        android:id="@+id/edt_xq_NO"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -42,16 +42,15 @@
         app:layout_constraintStart_toEndOf="@+id/tv_spxq_NO" />
 
     <Button
-        android:id="@+id/btn_spxq_delete"
+        android:id="@+id/btn_xq_delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="删除"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_xq_sure"
+        app:layout_constraintEnd_toStartOf="@+id/btn_xq_back"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintStart_toEndOf="@+id/btn_xq_sure" />
 
     <TextView
         android:id="@+id/textView"
@@ -60,7 +59,7 @@
         android:layout_marginTop="40dp"
         android:text="名称："
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintEnd_toStartOf="@+id/edt_xq_name"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_spxq_NO" />
@@ -72,13 +71,13 @@
         android:layout_marginTop="40dp"
         android:text="产地："
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintEnd_toStartOf="@+id/edt_xq_place"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edt_xq_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -89,7 +88,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edt_xq_place"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -100,15 +99,26 @@
         app:layout_constraintStart_toEndOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_xq_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="返回"
         android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_xq_delete"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_spxq_delete"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintStart_toEndOf="@+id/btn_xq_delete" />
+
+    <Button
+        android:id="@+id/btn_xq_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="确定"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_xq_delete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </android.support.constraint.ConstraintLayout>
