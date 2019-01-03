@@ -22,9 +22,10 @@ public class MainActivity extends AppCompatActivity {
                 btn_main_dl.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        String name=edt_main_name.getText().toString().trim();
-                        String password=edt_main_password.getText().toString().trim();
-
+                        Intent intent =new Intent(getApplicationContext(),spcxActivity.class);
+                        intent.putExtra("name",edt_main_name.getText().toString().trim());
+                        intent.putExtra("password",edt_main_password.getText().toString().trim());
+                        startActivity(intent);
 
                     }
                 });
