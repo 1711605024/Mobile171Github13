@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="65dp"
-        android:text="商品信息查询"
+        android:text="查询商品"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -19,110 +19,59 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_sp_NO"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="商品编号："
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/edt_sp_NO"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_sp" />
-
-    <TextView
         android:id="@+id/tv_sp_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="48dp"
         android:text="商品名称："
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/edt_sp_name"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_sp_NO" />
-
-    <TextView
-        android:id="@+id/tv_sp_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="38dp"
-        android:text="商品数量："
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/edt_sp_number"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_sp_name" />
-
-    <EditText
-        android:id="@+id/edt_sp_NO"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tv_sp_NO"
-        app:layout_constraintTop_toBottomOf="@+id/tv_sp" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_sp_show" />
 
     <EditText
         android:id="@+id/edt_sp_name"
-        android:layout_width="wrap_content"
+        android:layout_width="148dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_sp_name"
+        app:layout_constraintEnd_toStartOf="@+id/btn_sp_check"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tv_sp_name"
-        app:layout_constraintTop_toBottomOf="@+id/edt_sp_NO" />
+        app:layout_constraintStart_toEndOf="@+id/tv_sp_name" />
 
-    <EditText
-        android:id="@+id/edt_sp_number"
+    <Button
+        android:id="@+id/btn_sp_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="number"
+        android:text="查找"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edt_sp_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tv_sp_number"
-        app:layout_constraintTop_toBottomOf="@+id/edt_sp_name" />
+        app:layout_constraintStart_toEndOf="@+id/edt_sp_name" />
 
     <Button
         android:id="@+id/btn_sp_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:text="添加"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/btn_sp_delete"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_sp_number" />
-
-    <Button
-        android:id="@+id/btn_sp_delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:text="删除"
+        android:layout_marginTop="24dp"
+        android:text="添加商品信息"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_sp_add"
-        app:layout_constraintTop_toBottomOf="@+id/edt_sp_number" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_sp_name" />
 
-    <Button
-        android:id="@+id/btn_sp_see"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="47dp"
-        android:text="查看详情"
+    <TextView
+        android:id="@+id/tv_sp_show"
+        android:layout_width="0dp"
+        android:layout_height="277dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/holo_blue_bright"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_sp_add" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_sp" />
 
 </android.support.constraint.ConstraintLayout>
