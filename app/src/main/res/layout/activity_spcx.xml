@@ -48,7 +48,6 @@
         android:layout_width="278dp"
         android:layout_height="237dp"
         android:layout_marginTop="24dp"
-        android:background="?android:attr/searchWidgetCorpusItemBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
