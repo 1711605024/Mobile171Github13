@@ -16,8 +16,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class spxqActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btn_xq_back;
     private Button btn_xq_sure;
+    private Button btn_xq_back;
     private EditText edt_xq_number, edt_xq_name, edt_xq_place;
     TextView tv_cx_show;
     MyHelper myHelper;

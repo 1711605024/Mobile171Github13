@@ -13,7 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class spcxActivity extends AppCompatActivity {
-    Button btn_cx_check,btn_cx_add,btn_cx_delete;
+    Button btn_cx_check,btn_cx_add,btn_cx_delete,btn_cx_back;
     TextView tv_cx_show;
     MyHelper myHelper;
     SQLiteDatabase db;
@@ -23,10 +23,11 @@ public class spcxActivity extends AppCompatActivity {
         setContentView(R.layout.activity_spcx);
         myHelper=new MyHelper(this);
         tv_cx_show=(TextView)findViewById(R.id.tv_cx_show);
-
+        btn_cx_back=(Button) findViewById(R.id.btn_cx_back);
         btn_cx_delete=(Button) findViewById(R.id.btn_cx_delete);
         btn_cx_check=(Button) findViewById(R.id.btn_cx_check);
         btn_cx_add=(Button) findViewById(R.id.btn_cx_add);
+
         btn_cx_add.setOnClickListener(new View.OnClickListener() {//点击添加按钮执行操作
             @Override
             public void onClick(View view) {
@@ -70,6 +71,13 @@ public class spcxActivity extends AppCompatActivity {
                         db.close();
                         break;
                 }
+            }
+        });
+        btn_cx_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
             }
         });
     }

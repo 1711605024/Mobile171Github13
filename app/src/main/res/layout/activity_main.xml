@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/timg"
+    android:background="#6d68b0"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,25 +12,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="商品信息管理"
-        android:textColor="@android:color/black"
-        android:textSize="50sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.088" />
+        app:layout_constraintVertical_bias="0.119" />
 
     <TextView
         android:id="@+id/tv_main_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="100dp"
         android:text="账号:"
-        android:textColor="@android:color/black"
-        android:textSize="32sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv" />
 
@@ -38,12 +36,11 @@
         android:id="@+id/tv_main_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="9dp"
-        android:layout_marginStart="9dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="60dp"
         android:text="密码:"
-        android:textColor="@android:color/black"
-        android:textSize="32sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_main_name" />
 
@@ -53,7 +50,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_main_name"
         app:layout_constraintStart_toEndOf="@+id/tv_main_name" />
 
@@ -63,7 +60,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_main_password"
         app:layout_constraintStart_toEndOf="@+id/tv_main_password" />
 
@@ -72,8 +69,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:background="@android:drawable/progress_horizontal"
         android:text="登录"
-        android:textSize="30sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/btn_main_qute"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_main_password" />
@@ -82,8 +80,9 @@
         android:id="@+id/btn_main_qute"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@android:drawable/progress_horizontal"
         android:text="退出"
-        android:textSize="30sp"
+        android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_main_dl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_main_dl" />

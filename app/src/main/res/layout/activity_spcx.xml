@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6d68b0"
     tools:context=".spcxActivity">
 
     <TextView
         android:id="@+id/tv_sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="40dp"
         android:text="查询商品"
+        android:textColor="@android:color/background_light"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,44 +23,59 @@
         android:id="@+id/btn_cx_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="查找"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btn_cx_delete"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/progress_horizontal"
+        android:text="查看信息库"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_cx_delete" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cx_add" />
 
     <Button
         android:id="@+id/btn_cx_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/progress_horizontal"
         android:text="添加商品信息"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/btn_cx_delete"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_sp" />
 
     <TextView
         android:id="@+id/tv_cx_show"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="53dp"
-        android:background="@android:color/holo_blue_bright"
+        android:layout_width="278dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/searchWidgetCorpusItemBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_cx_add" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_cx_back" />
 
     <Button
         android:id="@+id/btn_cx_delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="删除"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btn_cx_add"
-        app:layout_constraintEnd_toStartOf="@+id/btn_cx_check"
-        app:layout_constraintStart_toEndOf="@+id/btn_cx_add" />
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/progress_horizontal"
+        android:text="删除信息库"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cx_check" />
+
+    <Button
+        android:id="@+id/btn_cx_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/progress_horizontal"
+        android:text="返回登录界面"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cx_delete" />
 
 </android.support.constraint.ConstraintLayout>
