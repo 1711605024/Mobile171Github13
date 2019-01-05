@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".spcxActivity" />
-        <activity android:name=".spxqActivity"></activity>
+        <activity android:name=".spxqActivity" />
+        <activity android:name=".dl"></activity>
     </application>
 
 </manifest>

@@ -68,16 +68,16 @@
         android:id="@+id/btn_main_dl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="92dp"
         android:background="@android:drawable/progress_horizontal"
         android:text="登录"
         android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/btn_main_qute"
+        app:layout_constraintEnd_toStartOf="@+id/btn_main_zc"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_main_password" />
 
     <Button
-        android:id="@+id/btn_main_qute"
+        android:id="@+id/btn_main_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:drawable/progress_horizontal"
@@ -85,6 +85,17 @@
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_main_dl"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_main_zc" />
+
+    <Button
+        android:id="@+id/btn_main_zc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/progress_horizontal"
+        android:text="注册"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_main_dl"
+        app:layout_constraintEnd_toStartOf="@+id/btn_main_back"
         app:layout_constraintStart_toEndOf="@+id/btn_main_dl" />
 
 </android.support.constraint.ConstraintLayout>
