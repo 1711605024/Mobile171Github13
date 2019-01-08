@@ -41,6 +41,7 @@ public class spxqActivity extends AppCompatActivity implements View.OnClickListe
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), spcxActivity.class);
                 startActivity(intent);
+                spxqActivity.this.finish();
             }
         });
 
@@ -76,8 +77,7 @@ public class spxqActivity extends AppCompatActivity implements View.OnClickListe
                     return;
                 }
                 db.insert("information", null, values);
-                Toast.makeText(this, "信息已添加", Toast.LENGTH_SHORT).show();
-
+                Toast.makeText(this, "信息添加成功", Toast.LENGTH_SHORT).show();
                 db.close();
                 break;
 

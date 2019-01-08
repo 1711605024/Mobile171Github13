@@ -32,8 +32,8 @@ public class spcxActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent =new Intent(getApplicationContext(),spxqActivity.class);
-
                 startActivity(intent);
+                spcxActivity.this.finish();
             }
         });
         btn_cx_check.setOnClickListener(new View.OnClickListener() {//点击查询按钮执行操作
@@ -78,6 +78,7 @@ public class spcxActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent =new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
+                spcxActivity.this.finish();
             }
         });
     }
