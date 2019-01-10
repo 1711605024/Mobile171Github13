@@ -65,15 +65,15 @@ public class spxqActivity extends AppCompatActivity implements View.OnClickListe
                 values.put("name", name);
                 values.put("place", place);
                 if(TextUtils.isEmpty(number)){
-                    Toast.makeText(this,"添加失败",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this,"添加失败,信息不完善",Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if(TextUtils.isEmpty(name)){
-                    Toast.makeText(this,"添加失败",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this,"添加失败，信息不完善",Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if(TextUtils.isEmpty(place)){
-                    Toast.makeText(this,"添加失败",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this,"添加失败，信息不完善",Toast.LENGTH_SHORT).show();
                     return;
                 }
                 db.insert("information", null, values);

@@ -38,17 +38,17 @@ public class MainActivity extends AppCompatActivity {
                         String spPsw=sp.getString(getname,"");
 
                         if (TextUtils.isEmpty(getname)) {
-                            Toast.makeText(MainActivity.this, "傻狗请输入用户名", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "请输入用户名", Toast.LENGTH_SHORT).show();
                             return;
                         } else if (TextUtils.isEmpty(getpsw)) {
-                            Toast.makeText(MainActivity.this, "傻狗请输入密码", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "请输入密码", Toast.LENGTH_SHORT).show();
                             return;
                         }else if((spPsw!=null&&!TextUtils.isEmpty(spPsw)&&!md5psw.equals(spPsw))) {
-                            Toast.makeText(MainActivity.this, "傻狗密码错误啦", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "密码错误", Toast.LENGTH_SHORT).show();
                             return;
                         }
                         else if (md5psw.equals(spPsw)) {
-                            Toast.makeText(MainActivity.this, "傻狗登录成功", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
                              sp = getSharedPreferences("loginInfo", MODE_PRIVATE);
                             SharedPreferences.Editor editor = sp.edit();
                             editor.putBoolean("isLogin", true);

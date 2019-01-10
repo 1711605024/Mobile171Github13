@@ -35,13 +35,13 @@ public class dl extends AppCompatActivity {
                 getpsw=edt_dl_password.getText().toString().trim();
 
                 if (TextUtils.isEmpty(getname)) {
-                    Toast.makeText(dl.this, "傻狗请输入账号", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(dl.this, "请输入账号", Toast.LENGTH_SHORT).show();
                     return;
                 } else if ((TextUtils.isEmpty(getpsw))) {
-                    Toast.makeText(dl.this, "傻狗请输入密码", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(dl.this, "请输入密码", Toast.LENGTH_SHORT).show();
                     return;
                 } else {
-                    Toast.makeText(dl.this, "傻狗注册成功", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(dl.this, "注册成功", Toast.LENGTH_SHORT).show();
                     String md5Psw = MD5Utils.md5(getpsw);
                     SharedPreferences sp=getSharedPreferences("loginInfo", MODE_PRIVATE);
                     SharedPreferences.Editor editor=sp.edit();
